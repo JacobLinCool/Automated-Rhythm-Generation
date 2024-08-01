@@ -9,10 +9,10 @@ Let's generate rhythm game maps automatically!
 ### Neural Networks
 
 - RhythmGen: Generate rhythm sequence from music piece.
-  - [x] RGGRU: RhythmGen with CNN feature extractor and GRU.
-  - [x] RGGRUAT: RhythmGen with CNN feature extractor, GRU, and multi-head attention.
-  - [x] RGTR: RhythmGen with CNN feature extractor and Transformer.
-  - [x] RGRoFormer: RhythmGen with CNN feature extractor, Transformer and RoPE.
+  - [x] RGGRU: RhythmGen with CNN feature extractor and GRU. (`460K`)
+  - [x] RGGRUAT: RhythmGen with CNN feature extractor, GRU, and multi-head attention. (`720K`)
+  - [x] RGTR: RhythmGen with CNN feature extractor and Transformer. (`15M`)
+  - [x] RGRoFormer: RhythmGen with CNN feature extractor, Transformer and RoPE. (`420K`)
   - [ ] Others: RhythmGen with other architectures.
 - RhythmRec: Reconstruct music piece from rhythm sequence.
   - [ ] No, we didn't implement this yet.
@@ -75,3 +75,7 @@ Or you can use the command line interface:
 ```sh
 python -m arg.infer RGGRU JacobLinCool/RhythmGenGRU-1-hard path/to/music.mp3
 ```
+
+## Others
+
+To see the model architecture: `python -m arg.model.RGGRU`, `python -m arg.model.RGRoFormer`, etc.

@@ -1,6 +1,6 @@
 [project]
 name = "automated-rhythm-generation"
-version = "0.0.0"
+version = "0.0.1"
 authors = [{ name = "Jacob Lin", email = "jacob@csie.cool" }]
 description = "ARG: Automated Rhythm Generation. Let's generate rhythm game maps automatically!"
 readme = "README.md"

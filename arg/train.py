@@ -34,6 +34,7 @@ def train(
     optimizer = optim.Adam(model.parameters(), lr=learning_rate)
 
     model, optimizer, train_loader = accelerator.prepare(model, optimizer, train_loader)
+    device = accelerator.device
 
     # Training loop
     for epoch in range(num_epochs):
