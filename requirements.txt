@@ -1,0 +1,13 @@
+datasets
+torch
+librosa
+numpy
+accelerate
+huggingface_hub
+tqdm
+tensorboard
+
+# dev
+build
+twine
+black
